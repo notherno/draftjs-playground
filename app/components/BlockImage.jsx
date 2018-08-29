@@ -7,6 +7,12 @@ export default class BlockImage extends React.Component {
     const { size } = this.props.blockProps
 
     const { src } = entity.getData()
-    return <img src={src} data-size={size} style={{maxWidth: '100%', height: 'auto'}}/>
+    return (
+      <img
+        src={src}
+        data-size={size}
+        style={{maxWidth: '100%', height: 'auto'}}
+      />
+    )
   }
 }
